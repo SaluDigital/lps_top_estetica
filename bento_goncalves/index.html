@@ -109,6 +109,15 @@ a:hover { color: #00A94A; }
     text-align: center !important;
   }
 
+  .local-whatsapp-button {
+    width: 100% !important;
+    max-width: 340px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+  }
+
   image-slot,
   iframe,
   img {
@@ -254,6 +263,15 @@ a:hover { color: #00A94A; }
     margin-left: auto !important;
     margin-right: auto !important;
     display: inline-flex !important;
+  }
+
+  .local-whatsapp-button {
+    width: 100% !important;
+    max-width: 340px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: inline-flex !important;
+    justify-content: center !important;
   }
 
   footer {
@@ -537,7 +555,7 @@ a:hover { color: #00A94A; }
       <p style="font-size:15px;color:var(--muted);margin:0 0 20px;">CEP 95700-058</p>
       <p style="font-size:14px;color:var(--muted);margin:0 0 26px;line-height:1.6;">Horários diferenciados, com atendimento até 19h30 e aos sábados. Consulte a disponibilidade da unidade pelo WhatsApp.</p>
       <div style="display:flex;flex-wrap:wrap;gap:12px;">
-        <a href="{{ waLinks.localizacao }}" target="_blank" rel="noopener noreferrer" aria-label="Confirmar horário pelo WhatsApp" style="display:inline-flex;align-items:center;gap:10px;background:var(--whatsapp);color:#fff;font-weight:700;font-size:14.5px;padding:14px 20px;border-radius:10px;min-height:44px;transition:background 0.25s ease;" style-hover="background:var(--whatsapp-hover);">{{ icons.whatsapp18 }}Confirmar horário no WhatsApp</a>
+        <a class="local-whatsapp-button" href="{{ waLinks.localizacao }}" target="_blank" rel="noopener noreferrer" aria-label="Confirmar horário pelo WhatsApp" style="display:inline-flex;align-items:center;gap:10px;background:var(--whatsapp);color:#fff;font-weight:700;font-size:14.5px;padding:14px 20px;border-radius:10px;min-height:44px;transition:background 0.25s ease;" style-hover="background:var(--whatsapp-hover);">{{ icons.whatsapp18 }}Confirmar horário no WhatsApp</a>
       </div>
     </div>
     <div data-animate="left" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 40px rgba(0,22,52,0.12);aspect-ratio:4/3;">
