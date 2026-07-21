@@ -138,6 +138,14 @@ a:hover { color: #00A94A; }
     min-height: 320px !important;
   }
 
+  [aria-labelledby="sobre-titulo"] [data-animate="up"] {
+    padding-bottom: 0 !important;
+  }
+
+  [aria-labelledby="sobre-titulo"] {
+    padding-top: 52px !important;
+  }
+
   [style*="grid-auto-rows:260px"] {
     grid-auto-rows: 210px !important;
   }
@@ -341,18 +349,18 @@ a:hover { color: #00A94A; }
 
 <main id="main-content">
 <!-- ================= SEÇÃO 2 — SOBRE ================= -->
-<section aria-labelledby="sobre-titulo" style="position:relative;background:var(--navy);color:#fff;padding:clamp(56px,8vw,96px) clamp(28px,5vw,72px);overflow:hidden;">
+<section aria-labelledby="sobre-titulo" style="position:relative;background:var(--navy);color:#fff;padding:clamp(28px,4vw,52px) clamp(28px,5vw,72px) 0;overflow:hidden;">
   <svg aria-hidden="true" style="position:absolute;top:20px;left:-70px;width:260px;height:260px;opacity:0.5;" viewBox="0 0 200 200"><path d="M100 10 C150 10 185 55 178 105 C172 150 135 188 92 182 C48 176 15 138 18 92 C21 45 55 10 100 10 Z" fill="none" stroke="#00E762" stroke-width="1.2"/></svg>
-  <div style="max-width:1220px;margin:0 auto;display:grid;grid-template-columns:1fr 0.85fr;gap:clamp(32px,5vw,64px);align-items:center;position:relative;">
-    <div data-animate="up" style="display:flex;flex-direction:column;justify-content:center;">
+  <div style="max-width:1220px;margin:0 auto;display:grid;grid-template-columns:1fr 0.85fr;gap:clamp(32px,5vw,64px);align-items:end;position:relative;">
+    <div data-animate="up" style="display:flex;flex-direction:column;justify-content:center;align-self:stretch;">
       <img src="./assets/logo-clara.png" alt="" aria-hidden="true" style="height:auto;width:150px;max-width:100%;opacity:0.9;margin-bottom:22px;display:block;" />
       <h2 id="sobre-titulo" style="font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,38px);line-height:1.08;margin:0 0 20px;max-width:16ch;">Cuidado que vai além do tratamento</h2>
       <p style="font-size:16px;line-height:1.7;color:rgba(255,255,255,0.82);max-width:56ch;margin:0 0 16px;">A Top Estética Bucal é uma rede de clínicas odontológicas comprometida em oferecer tratamentos de alta qualidade, unindo tecnologia, atendimento humanizado e profissionais especializados.</p>
       <p style="font-size:16px;line-height:1.7;color:rgba(255,255,255,0.82);max-width:56ch;margin:0 0 16px;">Na unidade de Soledade, cada paciente é recebido com atenção, transparência e um planejamento individual. A clínica atua na prevenção, reabilitação e estética do sorriso, reunindo diferentes especialidades em um só lugar.</p>
       <p style="font-size:16px;line-height:1.7;color:rgba(255,255,255,0.82);max-width:56ch;margin:0;">Nosso objetivo é tornar o cuidado odontológico mais tranquilo, próximo e acessível, contribuindo para a saúde, a autoestima e a qualidade de vida de cada paciente.</p>
     </div>
-    <div data-animate="left" style="position:relative;height:100%;">
-      <img src="./assets/img_hero.webp" alt="Profissional da Top Estética Bucal" loading="lazy" style="width:100%;height:100%;min-height:420px;object-fit:cover;border-radius:20px;display:block;" />
+    <div data-animate="left" style="position:relative;height:100%;align-self:end;display:flex;align-items:flex-end;">
+      <img src="./assets/img_hero.webp" alt="Profissional da Top Estética Bucal" loading="lazy" style="width:100%;height:100%;min-height:420px;object-fit:cover;object-position:center bottom;border-radius:20px;display:block;" />
     </div>
   </div>
 </section>
